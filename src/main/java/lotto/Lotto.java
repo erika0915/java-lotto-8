@@ -37,4 +37,25 @@ public class Lotto {
         }
         return false;
     }
+
+    // 이 로또가 당첨 번호와 몇 개 일치하는 지 계산
+    public int countMatches(Lotto winningLotto) {
+        int matchCount = 0;
+        for (int number : this.numbers){
+            if (winningLotto.contains(number)){
+                matchCount++;
+            }
+        }
+        return matchCount;
+    }
+
+    public boolean contains(int number){
+        return numbers.contains(number);
+    }
+
+    // 출력 시 오름차순으로 정렬된 문자열을 반환
+    public String toString(){
+        List<Integer> sortedNumbers = numbers.stream().sorted().toList();
+        return sortedNumbers.toString();
+    }
 }
