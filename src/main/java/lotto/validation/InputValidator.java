@@ -76,9 +76,9 @@ public class InputValidator {
         }
     }
     private static void validateNoDuplicates(List<Integer> numbers){
-        Set<Integer> uniqueNumbers = new HashSet<>();
+        Set<Integer> uniqueNumbers = new HashSet<>(numbers);
         if (uniqueNumbers.size() != numbers.size()) {
-            throw new IllegalArgumentException("[ERROR] 당첨 번호느 중복될 수 없습니다.");
+            throw new IllegalArgumentException("[ERROR] 당첨 번호는 중복될 수 없습니다.");
         }
     }
 
