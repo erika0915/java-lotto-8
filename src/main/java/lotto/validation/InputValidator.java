@@ -31,7 +31,7 @@ public class InputValidator {
     }
 
     private static void validatePositive(int amount){
-        if (amount < 0){
+        if (amount <= 0){
             throw new IllegalArgumentException("[ERROR] 구입 금액은 0보다 커야 합니다.");
         }
     }
