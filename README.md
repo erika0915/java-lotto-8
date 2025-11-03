@@ -51,3 +51,28 @@
 - 구입 금액, 당첨 번호, 보너스 번호 검증 로직에 대한 단위 테스트를 작성한다. 
 - 당첨 등수 판별 및 수익률 계산(비즈니스 로직)에 대한 단위 테스트를 작성한다. 
 - UI (입출력) 관련 로직은 테스트에서 제외한다. 
+
+## 📁 프로젝트 구조 
+```
+📁 src
+ ├── 📁 main
+ │   └── 📁 java
+ │       └── 📁 lotto
+ │           ├── 📁 controller
+ │           │   └── 📄 LottoGameController.java
+ │           ├── 📁 domain
+ │           │   ├── 📄 Lotto.java
+ │           │   └── 📄 Rank.java
+ │           ├── 📁 dto
+ │           │   └── 📄 LottoResponse.java
+ │           ├── 📁 service
+ │           │   ├── 📄 LottoIssuer.java
+ │           │   └── 📄 LottoStatisticCalculator.java
+ │           ├── 📁 validation
+ │           │   └── 📄 InputValidator.java
+ │           ├── 📁 view
+ │           │   ├── 📄 InputView.java
+ │           │   └── 📄 OutputView.java
+ │           └── 📄 Application.java
+ └── 📁 test
+```
