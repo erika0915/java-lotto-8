@@ -12,6 +12,8 @@ public class InputValidator {
     private static final int LOTTO_NUMBER_MAX = 45;
     private static final int LOTTO_NUMBER_COUNT = 6;
 
+    public InputValidator(){}
+
     // 구입 금액 검증
     public static int validatePurchaseAmount(String input){
         int amount = validateNumeric(input, "[ERROR] 구입 금액은 숫자여야 합니다.");
